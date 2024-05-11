@@ -1,41 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-09T01:03:42 IST" name="Suite" finished-at="2024-05-09T01:03:49 IST" duration-ms="7634">
+  <suite started-at="2024-05-11T19:45:51 IST" name="Default suite" finished-at="2024-05-11T19:46:00 IST" duration-ms="8772">
     <groups>
     </groups>
-    <test started-at="2024-05-09T01:03:42 IST" name="Test" finished-at="2024-05-09T01:03:49 IST" duration-ms="7634">
+    <test started-at="2024-05-11T19:45:51 IST" name="Default test" finished-at="2024-05-11T19:46:00 IST" duration-ms="8772">
       <class name="com.guru99.tests.loginTests">
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.guru99.tests.loginTests@6f03482]" started-at="2024-05-09T01:03:42 IST" name="preSetup" finished-at="2024-05-09T01:03:42 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.guru99.tests.loginTests@1fa121e2]" started-at="2024-05-11T19:45:50 IST" name="preSetup" finished-at="2024-05-11T19:45:51 IST" duration-ms="398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.guru99.tests.loginTests@6f03482]" started-at="2024-05-09T01:03:42 IST" name="setup" finished-at="2024-05-09T01:03:48 IST" duration-ms="5683" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.guru99.tests.loginTests@1fa121e2]" started-at="2024-05-11T19:45:51 IST" name="setup" finished-at="2024-05-11T19:45:59 IST" duration-ms="8385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLoginWithCorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.tests.loginTests@6f03482]" started-at="2024-05-09T01:03:48 IST" name="verifyUserLoginWithCorrectCredentials" finished-at="2024-05-09T01:03:49 IST" duration-ms="1739" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr564345]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[egYmUpY]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyUserLoginWithCorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.tests.loginTests@1fa121e2]" started-at="2024-05-11T19:45:59 IST" name="verifyUserLoginWithCorrectCredentials" finished-at="2024-05-11T19:45:59 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'username' is required by @Test on method verifyUserLoginWithCorrectCredentials but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-101360837\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'username' is required by @Test on method verifyUserLoginWithCorrectCredentials but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-101360837\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.tests.loginTests@6f03482]" started-at="2024-05-09T01:03:49 IST" name="tearDown" finished-at="2024-05-09T01:03:49 IST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.tests.loginTests@1fa121e2]" started-at="2024-05-11T19:45:59 IST" name="tearDown" finished-at="2024-05-11T19:46:00 IST" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="postTeardown()[pri:0, instance:com.guru99.tests.loginTests@1fa121e2]" started-at="2024-05-11T19:46:00 IST" name="postTeardown" finished-at="2024-05-11T19:46:01 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTeardown -->
       </class> <!-- com.guru99.tests.loginTests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
